@@ -20,5 +20,5 @@ def getTemperature():
     temperature = bmp.temperature
     if(temperature is not None):
         return "{:5.2f}".format(temperature)
-    else
+    else:
         return False
