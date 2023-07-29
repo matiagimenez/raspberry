@@ -13,10 +13,10 @@ while True:
     
     try:
         humidity, temperature = Adafruit.read_retry(Adafruit.AM2302, sensor)
+        file = open('temperature-humidity.txt', 'a')
         if (humidity is not None and temperature is not None):
             data = '[' + str(datetime.now()) + '] Temperature: ' + str("%.2f"%temperature) + ' - Humidity: ' + str(int(humidity)) + '%'
             print(data)
-            file = open('temperature-humidity.txt', 'a')
             file.write(data + '\n')
             sleep(1)
         else:
