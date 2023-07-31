@@ -38,10 +38,10 @@ def getLightLevels():
     visible_value = "{0}".format(visible)
     # Full spectrum (visible + IR) also range from 0-2147483647 (32-bit)
     full_spectrum = sensor.full_spectrum
-    full_spectrum_value = "{0}".format(full_espectrum)
+    full_spectrum_value = "{0}".format(full_spectrum)
     return {
         "total_light": lux_value,
         "infrared_light": infrared_value,
         "visible_light": visible_value,
-        "full_espectrum": full_espectrum_value
+        "full_spectrum": full_spectrum_value
     }
