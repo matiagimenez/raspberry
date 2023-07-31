@@ -2,6 +2,8 @@
 # cd Adafruit_Python_DHT
 # sudo apt install build-essential python-dev
 # sudo python3 setup.py install
+# o
+# sudo pip3 install Adafruit_DHT
 
 import Adafruit_DHT as Adafruit
 sensor_GPIO_pin = 4
