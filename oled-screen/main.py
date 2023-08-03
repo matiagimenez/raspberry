@@ -18,8 +18,9 @@ display.show()
 image = Image.new('1', (128, 64))
 draw = ImageDraw.Draw(image)
 font = ImageFont.load_default()
-draw.text((32, 32), 'Hello world!', font=font, fill=255)
-
+draw.text((0, 0), 'Hello world!', font=font, fill=255)
+draw.text((0, 16), 'Hello world!', font=font, fill=255)
+draw.text((0, 32), 'Hello world!', font=font, fill=255)
 # paints the screen
 display.image(image)
 display.show()
